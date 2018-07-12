@@ -1,6 +1,5 @@
-Instalamos la versión **(LTS) Long Term Support** 
+# Instalamos la versión **(LTS) Long Term Support** 
 
-<<<<<<< HEAD
 **npm init** Para iniciar proyecto de javascript
 
 ### Instalando Webpack
@@ -30,6 +29,3 @@ Instalamos la versión **(LTS) Long Term Support**
 **Procesando el entry points con webpack**
 > webpack <entry point> <output>
 > ∴ webpack index.js bundle.js
-=======
-**npm init** Para iniciar proyecto de javascript
->>>>>>> 18b64c0d263383ed0621b2455c39bcbb543b9cde
