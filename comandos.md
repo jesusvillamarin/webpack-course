@@ -27,12 +27,10 @@ npm install webpack webpack-cli --save-dev
         "build": "webpack index.js --output bundle.js --mode development"
     },
 ```
-**Corremos este script de la siguiente manera**
+**Procesamos el entry point con este script de la siguiente manera para poder generar el output (_bundle.js_)**
 > npm run build
 
-**Procesando el entry points con webpack**
-> webpack entry point output
-> ∴ webpack index.js bundle.js
+
 
 ## webpack.config.js
 **Configuraremos los entry points y outpus en el archivo de webpack con javascript**
@@ -40,7 +38,7 @@ Para que webpack y javascript puedan entender este archivo, es necesario exporta
 ```
 
 module.export= {
-    entry : 'index.js',
+    entry : './index.js',
     output : {
         filename : 'bundle.js'
     }
