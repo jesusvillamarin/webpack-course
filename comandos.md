@@ -111,10 +111,13 @@ module.exports = {
             
             // Los Loaders que usaremos son style-loader y css-loader debído a que no estan precargados en el webpack 
             // Podemos cargar un solo loader usando comillas o multiples loaders usando un array [] separando por coma (,)
-            use:['css-loader','style-loader'],
-                'css-loader' // ---> Poder cargar archivos css e interpretarlos dentros de javascript
 
-                'style-loader' // ---> Poder imprimir los previos archivos una vez ya interpretados
+            use:['style-loader','css-loader'],
+
+            // 'style-loader' // ---> Poder imprimir los previos archivos una vez ya interpretados
+            // 'css-loader' // ---> Poder cargar archivos css e interpretarlos dentros de javascript
+
+               
         ]
     }
 }
@@ -143,3 +146,65 @@ Para eso hay que instalarlo con el siguiente comando
 
 ### Existe una versión mas liviana para extraer los estilos css para webpack 4
 > npm install mini-css-extract-plugin --save-dev
+
+### Para usar el plugin lo que debemos hacer es importar el plugin y agregar esa nueva propiedad al webpack.config.js
+```
+const path = require('path');
+const pluginExtract = require('mini-css-extract-plugin');
+module.exports = {
+    entry: path.resolve(__dirname,'index.js'),
+    output:{
+        path: path.resolve(__dirname,'dist'),
+        filename:'bundle.js'
+    },
+    module:{
+        rules:[
+            test: /\.css$/, ---> Tipo de archivo que leera y soportara
+            use:[pluginExtract.loader,'css-loader'],
+        ]
+    },
+    plugins:[
+        new pluginExtract({
+            filename:'css/style.css'
+        })
+    ]
+}
+```
+
+### Para poder ejecutar el plugin debemos añadir su respectivo script en el package.json
+> "scripts":{
+    "build:plugin:extract" : "webpack --config ./ruta/webpack.config.js --mode development"
+}
+
+- Lo ejecutamos de la siguiente manera
+> npm run build:plugin:extract
+
+
+### Creando multiples entry points
+Solo es necesario modificar la propiedad entry como un objeto {}
+- De entry: path.resolve(__dirname,'index.js'),
+- A
+
+```
+const path = require('path');
+const pluginExtract = require('mini-css-extract-plugin');
+module.exports = {
+    entry: {
+        main:path.resolve(__dirname,'index.js'),
+    },
+    output:{
+        path: path.resolve(__dirname,'dist'),
+        filename:'bundle.js'
+    },
+    module:{
+        rules:[
+            test: /\.css$/, ---> Tipo de archivo que leera y soportara
+            use:[pluginExtract.loader,'css-loader'],
+        ]
+    },
+    plugins:[
+        new pluginExtract({
+            filename:'css/style.css'
+        })
+    ]
+}

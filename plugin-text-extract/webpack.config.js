@@ -18,7 +18,7 @@ module.exports = {
     },
     plugins:[
         new pluginExtract({
-            filename:'css/styles.css'
+            filename:'css/style.css'
         })
     ]
 
