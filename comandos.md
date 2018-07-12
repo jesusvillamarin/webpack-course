@@ -84,3 +84,55 @@ module.exports = {
 
 ### Lo ejecutamos de la siguiente manera
 > npm run build:external
+
+
+### Leer otro tipo de archivo dentro de nuestro archivo javascript que estamos compilando (Entry point) con Loaders dentro de webpack
+
+- En este caso leeremos un archivo css
+Para esta práctica crearemos una carpeta llamada **css-styles-loaders** con su respectivo **webpack.config.js**  e **index.js¨**
+
+
+
+### El webpack.config.js quedara de la siguiente manera 
+
+```
+const path = require('path')
+module.exports = {
+    entry: path.resolve(__dirname,'index.js'),
+    output:{
+        path: path.resolve(__dirname,'dist'),
+        filename:'bundle.js'
+    },
+    module:{
+        rules:[
+            // Lista de loaders que se van a utilizar
+            // Los loaders nos ayudaran a soportar diferentes tipos de archivos dentro de nuestro javscript
+            test: /\.css$/, ---> Tipo de archivo que leera y soportara
+            
+            // Los Loaders que usaremos son style-loader y css-loader debído a que no estan precargados en el webpack 
+            // Podemos cargar un solo loader usando comillas o multiples loaders usando un array [] separando por coma (,)
+            use:['css-loader','style-loader'],
+                'css-loader' // ---> Poder cargar archivos css e interpretarlos dentros de javascript
+
+                'style-loader' // ---> Poder imprimir los previos archivos una vez ya interpretados
+        ]
+    }
+}
+```
+### Debemos instalar dos loaders que no estan precargados en webpack para poder interpretar archivos css
+
+> npm install css-loader style-loader --save-dev
+- -D ( Hace referencia al --save-dev)
+
+### Creamos el script en el package.json para poder ejecutarlo 
+```
+    "main": "index.js",
+    "scripts" : {
+        "build" : "webpack index.js --output bundle.js --mode development",
+        "build:local" : "webpack --mode development",
+        "build:external: "webpack --config ./external/webpack.config.js --mode development",
+        "build:css" : "webpack --config ./css-styles-loaders/webpack.config.js --mode development"
+    }
+```
+ Lo ejecutamos de la siguiente manera
+ > npm run build:css
