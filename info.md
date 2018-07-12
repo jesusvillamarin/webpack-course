@@ -10,6 +10,9 @@
 
 # ¿Por qué usar webpack?
 Trabaja con AMD y CommonJS para cargar modulos
+> Webpack == Developer 
+**Webpack** utilizado para tener mejor la configuración, modulos mas organizados y mejores productos
+
 
 ## Conceptos básicos
 **Entry points** Modulo principal el cual se leera para importar los demás modulos, en webpack puede multiples entry point, webpack leera este archivo para generar un _bundle_
@@ -18,10 +21,13 @@ Trabaja con AMD y CommonJS para cargar modulos
 - donde estará este archivo
 - como se llamará
 
-**Loaders** Nos ayudará a cargar todo tipo de formato de archivo _jpg,png,git_. Cualquier cosa que no sea nativo de javascript y necesite ser interpretado, empaquetada y exportada con un archivo javascript, será entendido por webpack gracias a los **loaders**
+**Loaders** Nos ayudará a cargar todo tipo de formato de archivo _**jpg,png,git**_. Cualquier cosa que no sea nativo de javascript y necesite ser interpretado, empaquetada y exportada con un archivo javascript, será entendido por webpack gracias a los **loaders**
 
 
-**Plugins** Nos ayudaran a extender las caracteristicas de Webpack, como para comprimir archivos usando Uglify (_Dependencia utilizada para hacer el minificado de archivos_) ó dividir los modulos en chunk(_trozos_) mas pequeños para que la app cargue más rápido
+**Plugins** Nos ayudaran a extender las caracteristicas de Webpack, como para comprimir archivos usando Uglify (_**Dependencia utilizada para hacer el minificado de archivos**_) ó dividir los modulos en chunk(_**trozos**_) mas pequeños para que la app cargue más rápido
 
+**LTS** Long Term Support
+
+*npm init* Para iniciar proyecto de javascript
 
 

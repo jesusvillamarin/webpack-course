@@ -1,0 +1,27 @@
+{
+  "name": "webpack",
+  "version": "0.1.0",
+  "description": "Curso de Webpack visto en la plataforma de E-learning Platzi",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jesusvillamarin/webpack-course.git"
+  },
+  "keywords": [
+    "Platzi",
+    "webpack",
+    "javascript",
+    "LTS",
+    "loaders",
+    "plugins"
+  ],
+  "author": "Jesús Auriol Villamarín Ortiz",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jesusvillamarin/webpack-course/issues"
+  },
+  "homepage": "https://github.com/jesusvillamarin/webpack-course#readme"
+}
