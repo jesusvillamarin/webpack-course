@@ -54,3 +54,33 @@ module.export= {
     }
 ```
 > Solo se coloca **"build:local" : "webpack"**  debído a que por defecto se toma el archivo webpack.config.js
+
+## Cargando configuración de rutas relativas 
+Creamos una nueva carpeta de prueba llamada **external** y creamos los archivos **_webpack.config.js_** e **_index.js_** 
+
+### El archivo webpack.config.js dentro de la carpeta external tendra la siguient configuración
+
+```
+const path = require('path');
+module.exports = {
+    entry: path.resolve(__dirname,'index.js'),
+    output:{
+        path: path.resolve(__dirname,'dist'),
+        filename: 'bundle.js'
+    }
+}
+```
+
+### Se agrega un nuevo script al package.json
+```
+    "main" : 'index.js',
+    "scripts" : {
+        "build" : 'webpack index.js --output bundle.js --mode development",
+        "build:local" : 'webpack --mode development",
+        "build:external" : "webpack --config ./external/webpack.config.js --mode development"
+    }
+
+```
+
+### Lo ejecutamos de la siguiente manera
+> npm run build:external

@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "build": "webpack index.js --output bundle.js --mode development",
-    "build:local":"webpack --mode development"
+    "build:local":"webpack --mode development",
+    "build:external":"webpack --config ./external/webpack.config.js --mode development"
   },
   "repository": {
     "type": "git",
