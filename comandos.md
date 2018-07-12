@@ -89,7 +89,7 @@ module.exports = {
 ### Leer otro tipo de archivo dentro de nuestro archivo javascript que estamos compilando (Entry point) con Loaders dentro de webpack
 
 - En este caso leeremos un archivo css
-Para esta práctica crearemos una carpeta llamada **css-styles-loaders** con su respectivo **webpack.config.js**  e **index.js¨**
+Para esta práctica crearemos una carpeta llamada **css-styles-loaders** con su respectivo **webpack.config.js** , **index.js¨**, **index.html** y **estilos.css**
 
 
 
