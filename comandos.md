@@ -136,3 +136,10 @@ module.exports = {
 ```
  Lo ejecutamos de la siguiente manera
  > npm run build:css
+
+### Sacar los estilos del bundle y ponerlos en un archivo externo eso lo podemos hacer con un plugin llamado Extract Text Webpack
+Para eso hay que instalarlo con el siguiente comando
+> npm install extract-text-webpack-plugin@next 
+
+### Existe una versión mas liviana para extraer los estilos css para webpack 4
+> npm install mini-css-extract-plugin --save-dev
