@@ -26,8 +26,6 @@ Trabaja con AMD y CommonJS para cargar modulos
 
 **Plugins** Nos ayudaran a extender las caracteristicas de Webpack, como para comprimir archivos usando Uglify (_**Dependencia utilizada para hacer el minificado de archivos**_) ó dividir los modulos en chunk(_**trozos**_) mas pequeños para que la app cargue más rápido
 
-**LTS** Long Term Support
 
-*npm init* Para iniciar proyecto de javascript
 
 
