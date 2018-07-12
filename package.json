@@ -4,7 +4,8 @@
   "description": "Curso de Webpack visto en la plataforma de E-learning Platzi",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "webpack index.js --output bundle.js --mode development",
+    "build:local":"webpack --mode development"
   },
   "repository": {
     "type": "git",
