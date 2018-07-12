@@ -17,15 +17,16 @@
 > Creamos un index.js --> agregamos unas lineas de prueba
 
 ### Creando script de webpack en package.json para poder ejecutar la instrucción
-> package.json
+``` 
     "description": "Curso de Webpack visto en la plataforma de E-learning Platzi",
     "main": "index.js",
     "scripts": {
         "build": "webpack index.js bundle.js"
     },
+```
 **Corremos este script de la siguiente manera**
 > npm run build
 
 **Procesando el entry points con webpack**
-> webpack <entry point> <output>
+> webpack entry point output
 > ∴ webpack index.js bundle.js
