@@ -1,2 +1,2 @@
 import '../css/estilos.css';
-document.write('Mandando mensaje desde el archivo index.js');
+document.write("Escribiendo un mensaje desde ./src/js/index.js");

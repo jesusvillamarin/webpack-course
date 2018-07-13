@@ -1,2 +1,1 @@
-console.log("Hola mundo desde Webpack!");
-console.log("Hola desde el webpack.config.js");
+document.write('Jalando desde acá');
