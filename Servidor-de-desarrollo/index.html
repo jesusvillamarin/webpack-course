@@ -1,12 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Servidor de desarrollo</title>
 </head>
+
 <body>
-    
+    <h1>Creando un servidor de desarrollo con
+        <strong>webpack-dev-server</strong>
+    </h1>
+    <p>Para que se este refrescando cada modificación realizada al entry point ./src/js/index.js.
+        <br> Es necesario declarar la etiqueta script apuntando al bundle que genera la ruta del servidor de desarrollo, que
+        en este caso seria
+        <strong>http://localhost:8080/bundle.js </strong>
+    </p>
+    <hr>
+    <br>
+    <p>Si en el archivo script el puerto que se maneja es el <strong>2904</strong> es debido a que el webpack.config.js modificamos la configuración del puerto, webpack-dev-server por defecto asigna el puerto 8080</p>
+
+    <script src="http://localhost:2904/bundle.js"></script>
+
 </body>
+
 </html>

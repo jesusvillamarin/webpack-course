@@ -1,6 +1,9 @@
 body{
     background-color: coral;
-    font-size: 3em;
-    margin: 50%;
-    font-weight: bold;
+    font-size: 2em;
+    margin: 10%;
+    color: azure;
+}
+strong{
+    color: brown;
 }
