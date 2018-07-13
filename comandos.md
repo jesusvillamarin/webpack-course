@@ -179,6 +179,7 @@ module.exports = {
 - Lo ejecutamos de la siguiente manera
 > npm run build:plugin:extract
 
+<<<<<<< HEAD
 
 ### Creando multiples entry points
 Solo es necesario modificar la propiedad entry como un objeto {}
@@ -208,3 +209,6 @@ module.exports = {
         })
     ]
 }
+=======
+Generando nuestro archivo.css el cual nos representara los estilos, 
+>>>>>>> 6e7e469dbf91a35796bf7c90201a2537c878557e
