@@ -78,7 +78,6 @@ module:{
 // — indicar las rutas de ubicación de los archivos del certificado
 
 Opciones que aplican al archivo webpack.config.js:
-<<<<<<< HEAD
 
 noInfo
 // — Omite mostrar información innecesaria en la consola
@@ -110,33 +109,3 @@ stats
 
 ### Se puede encontrar mas documentación de la opciones de desarrollo en la siguiente página
 - [Webpack.js.org](https://webpack.js.org/configuration/dev-server/)
-=======
-
-noInfo
-// — Omite mostrar información innecesaria en la consola
-// — Default: false
-quiet
-// — No muestra nada en la consola
-// — Default: false
-lazy
-// — Cambia al modo lazy
-// —Default: false
-filename
-// — en modo lazy: el cambio de peticiones dispara la recompilación
-// — En la mayoría de los casos funciona igual que la configuración output.filename de js.
-watchOptions.aggregateTimeout
-// — Retrasa la recompilacion luego de los cambios. El valor es en ms.
-// —Default: 300
-watchOptions.poll
-// — true: usa chequeo
-// — numero: usa el chequeo en intervalos
-// —Default: undefined
-publicPath
-// — la ruta para enlazar el middleware con el servidor.
-// — En la mayoría de los casos es la misma que la configuracion output.publicPath del js.
-headers
-// — añadir cabeceras personalizadas. i. e. { “X-Custom-Header”: “yes” }
-stats
-// —Muestra en la salida opciones estadísticas.
-```
->>>>>>> f1d64dcd148f8b0ff15737d2db7661216493550e
