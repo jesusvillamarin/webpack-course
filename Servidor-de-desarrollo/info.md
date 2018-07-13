@@ -5,11 +5,15 @@
 
 > npm run build:multi:entry
 
+<<<<<<< HEAD
 ## Para crear nuestro servidor es necesario instalar "webpack-dev-server" para eso hacemos lo siguiente
 > npm install webpack-dev-server -D 
 - **(-D)** hace referencia al --save-dev
 
 
+=======
+<<<<<<< HEAD
+>>>>>>> 4df479c775d213c12d843453045aaccca05b5770
 ### Sin instalar webpack-dev-server podemos agregar el siguiente flag a nuestros scripts y esté estara a la escucha de nuestros cambios
 ```"build:update" : "webpack --config ./Servidor-de-desarrollo/webpack.config.js --watch" ```
 
@@ -26,5 +30,13 @@
 > npm run build:update
 
 ### Configuramos el package.json con 
+<<<<<<< HEAD
 
 
+=======
+=======
+## Para crear nuestro servidor es necesario instalar "webpack-dev-server" para eso hacemos lo siguiente
+> npm install webpack-dev-server -D 
+- **(-D)** hace referencia al --save-dev
+>>>>>>> 79417de8cda1305b5a908dfed1df6418f631cdc0
+>>>>>>> 4df479c775d213c12d843453045aaccca05b5770
