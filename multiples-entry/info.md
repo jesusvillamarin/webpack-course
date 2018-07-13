@@ -31,6 +31,15 @@
 
 - En filename se coloca [name] para que tomé el nombre de entry como valor de output 
 
+### Y como siempre se agrega el script en el package.json
+```
+    "scripts" :{
+        "build:multi:entry" : "webpack --config ./multiples-entry/webpack.config.js --mode development"
+     }
+```
+
+> npm run build:multi:entry
+
 # NOTA: Hay que acordarse que para que los css también sean compilados, deben estar importados en el archivo javascript correspondiente
 
 - Por ejemplo index.js
