@@ -12,8 +12,12 @@
     "build:multi:entry": "webpack --config ./multiples-entry/webpack.config.js --mode development --watch",
     "build:dev": "webpack --config ./multiples-entry/webpack.config.js --mode development --watch",
     "build:dev:server": "webpack-dev-server --config ./Servidor-de-desarrollo/webpack.config.js --mode development",
+<<<<<<< HEAD
     "build:babel": "webpack --config ./babel-loader/webpack.config.js --mode development",
     "build:img": "webpack --config ./img-loader/webpack.config.js --mode development"
+=======
+    "build:url-loader": "webpack --config ./url-loader/webpack.config.js --mode development"
+>>>>>>> 7c4db3fb5c0849935f03175c883b8472f1f6b6fd
   },
   "repository": {
     "type": "git",
@@ -36,8 +40,13 @@
   "devDependencies": {
     "babel-core": "^6.26.3",
     "babel-loader": "^7.1.5",
+<<<<<<< HEAD
     "babel-preset-es2015": "^6.24.1",
     "babel-preset-es2016": "^6.24.1",
+=======
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-es2015": "^6.24.1",
+>>>>>>> 7c4db3fb5c0849935f03175c883b8472f1f6b6fd
     "css-loader": "^1.0.0",
     "mini-css-extract-plugin": "^0.4.1",
     "style-loader": "^0.21.0",
@@ -45,5 +54,8 @@
     "webpack": "^4.16.0",
     "webpack-cli": "^3.0.8",
     "webpack-dev-server": "^3.1.4"
+  },
+  "dependencies": {
+    "es2015": "0.0.0"
   }
 }
