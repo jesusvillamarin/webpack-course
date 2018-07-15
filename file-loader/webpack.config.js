@@ -5,7 +5,8 @@ module.exports = {
     entry:path.resolve(__dirname,'src/js/index.js'),
     output:{
         path: path.resolve(__dirname,'dist'),
-        filename:'bundle.js'
+        filename:'bundle.js',
+        publicPath:'./dist/'
     },
     module:{
         rules:[
@@ -23,20 +24,22 @@ module.exports = {
                 }
             },
             {
-                test:/\.(png|jpg|gif|woff|eot|svg|ttf)$/,
+                test:/\.(png|jpg|gif|woff|ttf|svg|eot)$/,
                 use:{
                     loader:'url-loader',
                     options:{
-                        limit:100000
+                        limit:100,
+                        name:'assets/[name].[hash].[ext]'
                     }
                 }
             },
             {
                 test:/\.(mp4|webm)$/,
                 use:{
-                    loader:'file-loader',
+                    loader:'url-loader',
                     options:{
-                        limit:10000
+                        limit:1000,
+                        name:'videos/[name].[hash].[ext]'
                     }
                 }
             }
