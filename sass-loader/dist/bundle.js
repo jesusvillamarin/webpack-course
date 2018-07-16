@@ -81,53 +81,31 @@
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = "./file-loader/src/js/index.js");
+/******/ 	return __webpack_require__(__webpack_require__.s = "./sass-loader/src/js/index.js");
 /******/ })
 /************************************************************************/
 /******/ ({
 
-/***/ "./file-loader/src/css/estilo.css":
-/*!****************************************!*\
-  !*** ./file-loader/src/css/estilo.css ***!
-  \****************************************/
+/***/ "./sass-loader/src/css/estilo.scss":
+/*!*****************************************!*\
+  !*** ./sass-loader/src/css/estilo.scss ***!
+  \*****************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("// extracted by mini-css-extract-plugin\n\n//# sourceURL=webpack:///./file-loader/src/css/estilo.css?");
+eval("// extracted by mini-css-extract-plugin\n\n//# sourceURL=webpack:///./sass-loader/src/css/estilo.scss?");
 
 /***/ }),
 
-/***/ "./file-loader/src/imgs/octogib.jpg":
-/*!******************************************!*\
-  !*** ./file-loader/src/imgs/octogib.jpg ***!
-  \******************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-eval("module.exports = __webpack_require__.p + \"assets/octogib.dcef3abedf0e0761203aaeb85886a6f3.jpg\";\n\n//# sourceURL=webpack:///./file-loader/src/imgs/octogib.jpg?");
-
-/***/ }),
-
-/***/ "./file-loader/src/js/index.js":
+/***/ "./sass-loader/src/js/index.js":
 /*!*************************************!*\
-  !*** ./file-loader/src/js/index.js ***!
+  !*** ./sass-loader/src/js/index.js ***!
   \*************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("\n\n__webpack_require__(/*! ../css/estilo.css */ \"./file-loader/src/css/estilo.css\");\n\nvar _octogib = __webpack_require__(/*! ../imgs/octogib.jpg */ \"./file-loader/src/imgs/octogib.jpg\");\n\nvar _octogib2 = _interopRequireDefault(_octogib);\n\nvar _video = __webpack_require__(/*! ../videos/video.mp4 */ \"./file-loader/src/videos/video.mp4\");\n\nvar _video2 = _interopRequireDefault(_video);\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nvar element = document.createElement('p');\nelement.textContent = 'Agregando información desde el modulo ´index.js´ ';\ndocument.body.appendChild(element);\nvar img = document.createElement('img');\nimg.setAttribute('src', _octogib2.default);\nimg.setAttribute('height', '300');\ndocument.body.appendChild(img);\n\nvar videoelem = document.createElement('video');\nvideoelem.setAttribute('src', _video2.default);\nvideoelem.setAttribute('controls', true);\nvideoelem.setAttribute('width', '300');\n\ndocument.body.appendChild(videoelem);\n\n//# sourceURL=webpack:///./file-loader/src/js/index.js?");
-
-/***/ }),
-
-/***/ "./file-loader/src/videos/video.mp4":
-/*!******************************************!*\
-  !*** ./file-loader/src/videos/video.mp4 ***!
-  \******************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-eval("module.exports = __webpack_require__.p + \"videos/video.7a8923a28f2c8458d615a3f8743d8339.mp4\";\n\n//# sourceURL=webpack:///./file-loader/src/videos/video.mp4?");
+eval("\n\n__webpack_require__(/*! ../css/estilo.scss */ \"./sass-loader/src/css/estilo.scss\");\n\nvar element = document.createElement('p');\nelement.textContent = \"Elemento creado desde index.js y la página estilos sass\";\ndocument.body.appendChild(element);\n\n//# sourceURL=webpack:///./sass-loader/src/js/index.js?");
 
 /***/ })
 

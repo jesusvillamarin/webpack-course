@@ -1,0 +1,21 @@
+{
+    "amigos":[
+        {
+            "nombre":"Jesús",
+            "apellido":"Villamarín"
+        },
+        {
+            "nombre":"Karla",
+            "apellido":"Aguilar"
+        },
+        {
+            "nombre":"Mónica",
+            "apellido":"Sanchéz"
+        },
+        {
+            "nombre":"Edwin",
+            "apellido":"Balseca"
+        }
+        
+    ]
+}

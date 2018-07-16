@@ -1,6 +1,15 @@
 import '../css/estilo.css';
 import imagen from '../imgs/octogib.jpg';
 import video from '../videos/video.mp4';
+import data from '../data.json';
+
+console.log(data)
+
+data.amigos.forEach(element => {
+    const elementList = document.createElement('li');
+    elementList.textContent = element.nombre+" "+element.apellido;
+    document.body.appendChild(elementList);
+});
 
 const element = document.createElement('p');
 element.textContent = 'Agregando información desde el modulo ´index.js´ ';
